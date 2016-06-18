@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "hyn/dashboard",
+    "description": "A dashboard based on Laravel.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
@@ -8,8 +8,6 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "spatie/laravel-tail": "^1.1",
-        "spatie/last-fm-now-playing": "^1.0",
-        "spatie/laravel-google-calendar": "^1.0",
         "olssonm/l5-very-basic-auth": "^1.2",
         "graham-campbell/github": "^4.3",
         "barryvdh/laravel-ide-helper": "^2.1",
@@ -19,6 +17,10 @@
         "pda/pheanstalk": "^3.1",
         "guzzlehttp/guzzle": "^6.2",
         "spatie/laravel-blade-javascript": "^1.0"
+    },
+    "suggest": {
+        "spatie/last-fm-now-playing": "For showing currently playing song on Last FM.",
+        "spatie/laravel-google-calendar": "For showing Google Calendar items."
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -157,7 +157,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         Spatie\Tail\TailServiceProvider::class,
         Olssonm\VeryBasicAuth\VeryBasicAuthServiceProvider::class,
-        Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
         GrahamCampbell\GitHub\GitHubServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         \App\Providers\CollectionServiceProvider::class,

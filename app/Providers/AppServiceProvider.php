@@ -6,6 +6,10 @@ use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    protected $suggested = [
+        \Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
+    ];
+
     /**
      * Bootstrap any application services.
      */
@@ -18,6 +22,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        foreach($this->suggested as $serviceProvider) {
+            if (class_exists($serviceProvider)) {
+                $this->app->register($serviceProvider);
+            }
+        }
     }
 }
