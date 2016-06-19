@@ -36,5 +36,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('dashboard:heartbeat')->everyMinute();
         $schedule->command('dashboard:packagist')->hourly();
         $schedule->command('dashboard:rain')->everyMinute();
+        $schedule->command('dashboard:newrelic:hosts-health')->everyMinute();
     }
 }

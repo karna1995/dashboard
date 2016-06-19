@@ -3,11 +3,12 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Spatie\GoogleCalendar\GoogleCalendarServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
     protected $suggested = [
-        \Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
+        GoogleCalendarServiceProvider::class,
     ];
 
     /**

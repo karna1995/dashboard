@@ -10,8 +10,8 @@ export default {
                     <h1>{{ application }}</h1>
                     <ul class="new-relic-application-hosts__hosts">
                         <li v-for="host in hosts"  class="new-relic-application-hosts__host">
-                            <h2 class="google-calendar__event__title">{{ host.host }}</h2>
-                            <div class="google-calendar__event__date">{{ host.health_status }}</div>
+                            <h2 class="new-relic-application-hosts__host__title">{{ host.host }}</h2>
+                            <div class="new-relic-application-hosts__host__health">{{ host.health_status }}</div>
                         </li>
                     </ul>
                 </section>
