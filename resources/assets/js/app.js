@@ -7,6 +7,7 @@ import LastFm from './components/last-fm';
 import moment from 'moment';
 import PackagistStatistics from './components/packagist-statistics';
 import RainForecast from './components/rain-forecast';
+import NewRelicApplicationHosts from './components/new-relic-application-hosts';
 import Vue from 'vue';
 
 moment.locale('en', {
@@ -32,6 +33,7 @@ new Vue({
         LastFm,
         PackagistStatistics,
         RainForecast,
+        NewRelicApplicationHosts
     },
 
 });

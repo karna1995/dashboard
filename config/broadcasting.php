@@ -33,6 +33,7 @@ return [
             'key' => env('PUSHER_KEY'),
             'secret' => env('PUSHER_SECRET'),
             'app_id' => env('PUSHER_APP_ID'),
+            'cluster' => env('PUSHER_CLUSTER'),
         ],
 
         'redis' => [
